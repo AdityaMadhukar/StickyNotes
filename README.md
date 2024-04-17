@@ -25,7 +25,7 @@
 ## Database Structure
 
                         +-------------------+
-                        |       users       |
+                        |       user        |
                         +-------------------+
                         | id (PK)           |
                         | name              |
