@@ -13,6 +13,7 @@
 
 1. Create .env files in each of the client and server folders
 2. Add env variables as shown in example.env files in both folders
+3. Create Database Schema according to schema.sql file in server/config
 
 ## Running 
 
