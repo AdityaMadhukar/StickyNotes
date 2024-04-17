@@ -2,9 +2,10 @@
 
 1. Clone the repository:
    ```bash
-   git clone https://github.com/yourusername/yourproject.git
+   git clone https://github.com/AdityaMadhukar/StickyNotes.git
 
 2. Navigate to server and client directories and install dependencies
+    ```terminal
     npm install 
     or
     npm install --force
@@ -17,9 +18,11 @@
 ## Running 
 
 1. Navigate to server directory
+    ```terminal
     npm run dev
 
 2. Navigate to client directory
+    ```terminal
     npm run start
 
 
