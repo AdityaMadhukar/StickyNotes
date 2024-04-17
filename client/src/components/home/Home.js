@@ -1,5 +1,6 @@
 import React, { useState, useEffect } from 'react';
 import { useNavigate } from "react-router-dom";
+import { toast } from 'react-toastify';
 import deleteIcon from './delete.png';
 import editIcon from './edit.png';
 import axios from 'axios';
@@ -106,6 +107,7 @@ const Home = () => {
                     }
                 }
             );
+            toast.success('Note Added');
             try {
                 // Retrieve token from cookie
                 const token = getCookie('token');
@@ -158,6 +160,7 @@ const Home = () => {
                     }
                 }
             );
+            toast.success('Note Edited');
             try {
                 // Retrieve token from cookie
                 const token = getCookie('token');
@@ -206,6 +209,7 @@ const Home = () => {
                     "Authorization": `Bearer ${token}`
                 }
             });
+            toast.success('Note Deleted');
             try {
                 // Retrieve token from cookie
                 const token = getCookie('token');

@@ -1,6 +1,7 @@
 import React, { useState } from 'react';
 import { useNavigate } from "react-router-dom";
 import axios from 'axios';
+import { toast } from 'react-toastify';
 
 const Login = () => {
     const navigate = useNavigate();
@@ -26,10 +27,12 @@ const Login = () => {
                 document.cookie = `token=${token}; path=/; max-age=1*24*60*60`; // max-age is the expiration time in seconds
                 document.cookie = `role=${role}; path=/; max-age=1*24*60*60`;
                 window.location.replace("/");
+                toast.success('Login successful');
             }
             
         } catch (error) {
             console.error('Error:', error);
+            toast.error('Login failed');
             // Optionally, you can handle errors and display appropriate messages to the user
         }
     };

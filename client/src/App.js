@@ -6,10 +6,14 @@ import Register from "./components/register/Register";
 import Home from "./components/home/Home";
 import Users from "./components/users/Users";
 import Log from "./components/log/Log";
+import { ToastContainer } from 'react-toastify';
+import 'react-toastify/dist/ReactToastify.css';
+
 
 function App() {
   return (
     <div className="bg-gray-800">
+      <ToastContainer />
       <Navbar/>
       <BrowserRouter>
         <Routes>

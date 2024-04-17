@@ -1,6 +1,7 @@
 import React, { useState, useEffect } from 'react';
 import axios from 'axios';
 import { useNavigate } from "react-router-dom";
+import { toast } from 'react-toastify';
 
 const Users = () => {
     const navigate = useNavigate();
@@ -61,6 +62,7 @@ const Users = () => {
                     }
                 }
             );
+            toast.success('User Promoted');
             try {
                 const response = await axios.get(`${process.env.REACT_APP_API_URL}/admin/users`, {
                     headers: {
