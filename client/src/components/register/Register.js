@@ -16,6 +16,8 @@ const Register = () => {
         e.preventDefault();
         try {
             const response = await axios.post(`${process.env.REACT_APP_API_URL}/user/register`, formData);
+            console.log(response);
+            window.location.replace("/login");
         } catch (error) {
             console.error('Error:', error);
             // Optionally, you can handle errors and display appropriate messages to the user
