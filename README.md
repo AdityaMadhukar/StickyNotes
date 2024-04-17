@@ -7,9 +7,8 @@
 2. Navigate to server and client directories and install dependencies
     ```terminal
     npm install 
-    or
-    npm install --force
 
+    npm install --force
 ## Configuration
 
 1. Create .env files in each of the client and server folders
@@ -20,14 +19,9 @@
 1. Navigate to server directory
     ```terminal
     npm run dev
-
 2. Navigate to client directory
     ```terminal
     npm run start
-
-
-
-
 ## Database Structure
 
                         +-------------------+
